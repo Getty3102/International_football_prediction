@@ -1,7 +1,8 @@
 # International_football_prediction
 
-Predicting Football Match Results of Spanish League using Bayesian Hierarchical Model
-Established Bayesian models and leveraged historical data to predict home and away teams’ performance. Achieved over 80% prediction accuracy of winning percentage and 53% of the goal prediction.
+# Background
+Predicting the outcome of football matches has long been a subject of great interest and excitement among football enthusiasts, sports analysts, and betting enthusiasts. The ability to accurately forecast match results not only adds to the thrill of the game but also holds significant implications for various stakeholders involved.
+The goal is to develop a prediction algorithm that can leverage historical data and current information to provide reliable insights into the probable outcome of future football matches. Such an algorithm would enable users to make informed decisions, whether for betting purposes, fantasy league competitions, or simply for enhancing their understanding and enjoyment of the sport.
 
 # Team Members:
 
@@ -48,14 +49,24 @@ Getrude Obwoge
 ID: 1691b4416e41f000
 
 
+# Requirements
 
-#Requirements
-Google COLAB
-Python
+● Google COLAB
 
-# Background
-Predicting the outcome of football matches has long been a subject of great interest and excitement among football enthusiasts, sports analysts, and betting enthusiasts. The ability to accurately forecast match results not only adds to the thrill of the game but also holds significant implications for various stakeholders involved.
-The goal is to develop a prediction algorithm that can leverage historical data and current information to provide reliable insights into the probable outcome of future football matches. Such an algorithm would enable users to make informed decisions, whether for betting purposes, fantasy league competitions, or simply for enhancing their understanding and enjoyment of the sport.
+● Python Libraries;
+
+● Numpy
+
+● Pandas
+
+● Pandas_profiling
+
+● Matplotlib.pyplot
+
+● Seaborn
+
+● Plotly.express
+
 
 # Motivation
 There are many machine learning approaches for game prediction, however, we believe the XGBoost Classifier could be very helpful in this scenario leveraging historical data and advanced analytical techniques. The goal is to provide users with reliable insights into future match results, enhancing their understanding, enjoyment, and decision-making in relation to football matches
@@ -66,7 +77,8 @@ Data Set with the football matches of the International football matches has bee
 # Data Source
 The dataset was obtained from Kaggle via the link :
 https://www.kaggle.com/datasets/martj42/international-football-results-from-1872-to-201 7/code
-Pipe Line
+
+# Pipe Line
 
 ● Exploratory Data Analysis
 
