@@ -78,7 +78,7 @@ Data Set with the football matches of the International football matches has bee
 The dataset was obtained from Kaggle via the link :
 https://www.kaggle.com/datasets/martj42/international-football-results-from-1872-to-2017
 
-# PipeLine
+# Data Pipeline
 
 ● Exploratory Data Analysis
 
@@ -90,29 +90,11 @@ https://www.kaggle.com/datasets/martj42/international-football-results-from-1872
 
 ● Model Training and Evaluation
 
-# Exploratory Data Analysis
-Exploratory Data Analysis (EDA) is a crucial initial step in the data analysis process. It involves examining and understanding the structure, patterns, and characteristics of the dataset at hand. By exploring the data, we can uncover valuable insights, identify trends, detect anomalies, and gain a deeper understanding of the variables and relationships within the dataset
-
-# Data Preprocessing
-The following was done during the data preprocessing stage:
-
-● The data column was dropped was dropped because it was irrelevant as we do not plan to carry out a time series analysis as the time spans are inconsistent.
-
-● In our dataset, the distribution of the target column reveals a class imbalance issue. The home_team_wins class accounts for 48.71% of instances, while the draw and away_team_wins classes comprise 23% and 28.29% respectively. This imbalance may lead the model to overemphasize the trends of home team wins during training, resulting in poor performance on unseen data without similar patterns. To mitigate this, we will address the class imbalance by employing oversampling techniques to increase the representation of the minority classes.
-
-● Data normalization was perfomed to ensure that all features have comparable ranges, preventing any particular feature from dominating the learning process. By bringing the features to a consistent scale, we enable the machine learning model to give equal consideration to each feature, avoiding biases that may arise due to variations in their original scales. Normalization plays a crucial role in creating a balanced learning environment, enhancing the model's ability to learn meaningful patterns and make accurate predictions.
-
 # Model Training and Evaluation
 Model Training: Machine learning revolves around understanding the patterns and behaviors exhibited by a dataset and then testing this understanding on new data. To accomplish this, the dataset was divided into three distinct sets: the training dataset and the testing dataset and validation dataset.
 
-Baseline Model : In our project, we have chosen the K-Nearest Neighbors (KNN) algorithm as our baseline model. The KNN algorithm will serve as a foundational model from which we can assess the performance and effectiveness of more advanced techniques or models.The KNN model will provide a reference point to measure the progress and advancements made in our machine learning project.
-
+Baseline Model : In our project, we have chosen the K-Nearest Neighbors (KNN) algorithm as our baseline model. 
 We observed the following accuracy results: the training accuracy of the KNN model is 0.71, while the validation accuracy is 0.47.
-It is evident that the KNN model demonstrates a higher accuracy on the training set compared to the testing set. This discrepancy indicates the presence of overfitting, whereby the model has learned the training data too well and struggles to generalize to new, unseen data.
-
-We also used the Random Forest Classifier and XGBoost Classifier which gave the following results:
-Random Forest Classifier: Training Accuracy : 1.0 , Validation Accuracy: 0.98. Which implies that the RF model performs well on training set and testing set.
-XGBoost Classifier: Training Accuracy : 1.0 , Validation Accuracy: 1.0
 The best performing model is the xgboost with a 100% accuracy on both the train and validation set. For that reason we will use it for our model evaluation.
 
 # Model Evaluation
