@@ -76,9 +76,9 @@ Data Set with the football matches of the International football matches has bee
 
 # Data Source
 The dataset was obtained from Kaggle via the link :
-https://www.kaggle.com/datasets/martj42/international-football-results-from-1872-to-201 7/code
+https://www.kaggle.com/datasets/martj42/international-football-results-from-1872-to-2017
 
-# Pipe Line
+# PipeLine
 
 ● Exploratory Data Analysis
 
@@ -120,6 +120,6 @@ During this phase we assessed the performance and effectiveness of a machine lea
 The results for the Model Evaluation using XGBoost Classifier which gave the highest accuracy on the training and testing accuracy are;
 Training Accuracy : 1.0 Test Accuracy: 0.99.
 
-Which implies that on the unseen test data, the model still performed exceptionally well. This demonstrates that the model has not been overfit
+Which implies that on the unseen test data, the model still performed exceptionally well. This demonstrates that the model has not been overfit.
 
 
